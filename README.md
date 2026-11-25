@@ -1,5 +1,21 @@
 # HP LaserJet Pro MFP M428fdw — Firmware Downgrade (restore 3rd-party cartridge support)
 
+> ## 🙏 Credit — this solution belongs to the community
+>
+> **This fix exists because of [gointern](https://www.reddit.com/user/gointern/)**, who on
+> r/printers in October 2022 tracked down the pre-block firmware, worked out the USB-stick
+> method, and published it for everyone:
+> **[“HP M428fdw M428dw firmware downgrade”](https://www.reddit.com/r/printers/comments/yd024g/hp_m428fdw_m428dw_firmware_downgrade/)**.
+> Without that post, none of this would have been possible.
+>
+> Also thank you to **HuckleberryTypical59**, who re-hosted the firmware in 2024 when the
+> original links started dying (keeping the fix alive through 2026), and to the thread's
+> contributors who hardened the procedure — **CraftyLaw5921** (FAT32 + details),
+> **John77379** (*Allow Updates* must be ON), and **mirfananwaar** (cold-reset trick).
+>
+> In gointern's own words: *"Hopefully this will be useful for somebody instead of paying
+> over 200$ a cartridge to HP."* — Mission accomplished.
+
 **Symptom:** HP Dynamic Security firmware (2025/2026 builds, e.g. `N002.2626A.00`) blocks
 third-party HP 58A/58X (CF258A/X) cartridges with error **10.00.46** — *"cartridges have been
 blocked by the printer firmware because they contain a non-HP chip"* — even with Cartridge
